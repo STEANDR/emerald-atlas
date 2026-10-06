@@ -24,7 +24,7 @@ const russianStops=[
 {title:'Волшебство возвращения',label:'Снова дома',tag:'Общий финал',lead:'Последняя остановка возвращает нас к теме дома.',b:'Глинда объясняет силу серебряных башмачков. Дороти возвращается в Канзас.',v:'Стелла объясняет силу серебряных башмачков. Элли возвращается домой.',q:'Что остаётся неизменным в основе обеих историй?',ref:'Баум: гл. XXIII–XXIV · Волков: Стелла и заключение'}
 ];
 if(isRu)stops.forEach((s,i)=>Object.assign(s,russianStops[i]));
-const mapPositions=[[96,505],[722,314],[673,373],[638,455],[400,278],[145,212],[447,253],[388,518]];
+const mapPositions=[[116,516],[718,306],[684,370],[628,456],[378,282],[141,215],[432,282],[386,520]];
 const mapNamesEn=['Kansas','Munchkin village','The companions','The ogre','Emerald City','The witch’s castle','Back to the city','The way home'];
 const mapNamesRu=['Канзас','Деревня Жевунов','Попутчики','Людоед','Изумрудный город','Замок ведьмы','Снова в городе','Дорога домой'];
 stops.forEach((s,i)=>{[s.x,s.y]=mapPositions[i];s.label=t(mapNamesEn[i],mapNamesRu[i]);});
